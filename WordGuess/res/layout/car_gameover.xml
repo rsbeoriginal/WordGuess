@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_car_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF886"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/img_result"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/win" />
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF886"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/bt_play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Again" />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical"
+    android:orientation="vertical"
+    android:paddingTop="20dp" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Give a Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp" >
+
+        <EditText
+            android:id="@+id/txt_fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:hint="First Name(Max  9)"
+            android:inputType="textPersonName"
+            android:textSize="15dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/txt_lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:hint="Last Name(Max 9)"
+            android:inputType="textPersonName"
+            android:textSize="15dp" />
+    </TableRow>
+
+    <EditText
+        android:id="@+id/txt_name_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Description " />
+
+    <TextView
+        android:id="@+id/txt_name_err"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-4377692594271523/4764112895" >
+    </com.google.android.gms.ads.AdView>
+
+    <Button
+        android:id="@+id/bt_challlenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadingEdge="horizontal|vertical"
+        android:text="Challenge" />
+
+</LinearLayout>

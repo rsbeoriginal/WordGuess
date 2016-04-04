@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rsp.rishi"
+    android:versionCode="3"
+    android:versionName="1.7" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name" 
+            android:launchMode="singleTask">"
+            <intent-filter>
+                <action android:name="com.rsp.rishi.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Challenge"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.rsp.rishi.CHALLENGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Play"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.rsp.rishi.PLAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WordGuess"
+            android:label="@string/app_name" 
+           >
+            <intent-filter>
+                <action android:name="com.rsp.rishi.WORDGUESS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GameOver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.rsp.rishi.GAMEOVER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WordGuessPlay"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.rsp.rishi.WORDGUESSPLAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NamePlay"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.rsp.rishi.NAMEPLAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChallengeMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.rsp.rishi.CHALLENGEMENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GiveName"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.rsp.rishi.GIVENAME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Help"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.rsp.rishi.HELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                <activity
+            android:name=".AboutUs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.rsp.rishi.ABOUTUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                
+                <activity
+            android:name=".Dialog"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.rsp.rishi.DIALOG" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".grid"
+            android:label="@string/app_name" 
+            >
+            <intent-filter>
+                <action android:name="com.rsp.rishi.GRID" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".Career"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.rsp.rishi.CAREER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Car_Level"
+            android:label="@string/app_name" 
+            >
+            <intent-filter>
+                <action android:name="com.rsp.rishi.CAR_LEVEL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Car_gameover"
+            android:label="@string/app_name" 
+            >
+            <intent-filter>
+                <action android:name="com.rsp.rishi.CAR_GAMEOVER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".Car_menu"
+            android:label="@string/app_name" 
+            >
+            <intent-filter>
+                <action android:name="com.rsp.rishi.CAR_MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+    </application>
+</manifest>
